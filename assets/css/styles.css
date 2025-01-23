@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    background: #fff;
+}
+
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+/* =====================Common=================== */
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    border: 1px solid #212832;
+    border-radius: 8px;
+    background: #212832;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 175%;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: #212832;
+    background: #fff;
+}
+
+.heading-top {
+    display: flex;
+    align-items: center;
+    color: #696d77;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 175%;
+}
+
+.heading-top::before {
+    margin-right: 12px;
+    display: inline-block;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+}
+
+.heading {
+    margin-top: 12px;
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+.desc {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 166.667%;
+}
+
+/* ======================Header=================== */
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 5px 5px 18px #88888851;
+    padding: 42px 0;
+    transition: padding 0.3s ease;
+    background: #fff;
+}
+
+body.scrolled .header {
+    padding: 15px 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__list {
+    margin-left: 70px;
+    display: grid;
+    grid-template: auto / auto auto auto auto;
+}
+
+.navbar__item__link {
+    position: relative;
+    padding: 12px 23.5px;
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 175%;
+}
+
+.navbar__item__link::after {
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    content: "";
+    display: none;
+    width: calc(100% - 47px);
+    height: 1px;
+    background: #7264d6;
+}
+
+.navbar__item__link:hover::after {
+    display: inline-block;
+}
+
+.navbar__item__link:hover {
+    color: #212832;
+    font-weight: 600;
+}
+
+.header__action {
+    line-height: 175%;
+    display: flex;
+    align-items: center;
+}
+
+.header__logIn {
+    padding: 12px 28px;
+    color: #212832;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.header__logIn:hover {
+    opacity: 0.6;
+}
+
+.header__btn {
+    padding: 12px 28px;
+}
+
+/* ======================Hero=================== */
+
+.hero {
+    margin-top: 34px;
+}
+
+.hero__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 160px;
+}
+
+.hero__content {
+    max-width: 540px;
+}
+
+.hero__heading {
+    font-size: 6rem;
+}
+
+.subscribe__form {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    width: 540px;
+    height: 74px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.subscribe__form-input {
+    padding-left: 23px;
+    width: 540px;
+    height: 74px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.subscribe__form-submit {
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 15px 30px;
+    color: #fff;
+    font-weight: 600;
+    margin-right: 8px;
+    border-radius: 8px;
+    background: #7264d6;
+    border: none;
+}
+
+.subscribe__form-submit:hover {
+    opacity: 0.8;
+}
+
+.hero__form-desc {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.heading__highlight {
+    color: #7264d6;
+}
+
+.hero__media {
+    min-width: 470px;
+    height: 562px;
+}
+
+.hero__img-wrap {
+    position: relative;
+    width: 100%;
+}
+
+.hero__img {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+.hero__decor {
+    z-index: -1;
+    position: absolute;
+}
+
+.deposite {
+    left: -100px;
+    top: 113px;
+}
+
+.interest {
+    top: 127px;
+    right: 0;
+}
+
+.secured-funds {
+    right: 100px;
+    top: 433px;
+}
