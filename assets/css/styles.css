@@ -539,3 +539,134 @@ body.scrolled .header {
 .work3__btn {
     margin-top: 38px;
 }
+
+/* ======================Review=================== */
+
+.review {
+    margin-top: 160px;
+}
+
+.review__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review__desc {
+    max-width: 435px;
+    text-align: center;
+}
+
+.review__list {
+    margin-top: 70px;
+    display: flex;
+    gap: 0 30px;
+}
+
+.review__box {
+    background: #fff;
+    position: relative;
+    width: 570px;
+    height: 254px;
+    padding: 42px 28px;
+    border: 1px solid #dfe2e8;
+    border-radius: 10px;
+}
+
+.review__box::after {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    display: inline-block;
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-bottom: 1px solid #dfe2e8;
+    border-right: 1px solid #dfe2e8;
+}
+
+.review__box:hover {
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+    border: none;
+}
+
+.review__box:hover::after {
+    border-bottom: none;
+    border-right: none;
+}
+
+.review__content {
+    position: relative;
+    z-index: 10;
+    color: #696d76;
+    text-align: center;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 154.545%;
+}
+
+.review__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review__avatar__box {
+    margin-top: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review__avatar {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+}
+
+.review__author {
+    margin-top: 20px;
+    color: #070052;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 138.462%;
+}
+
+.review__author-job {
+    margin-top: 2px;
+    color: #696d76;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 166.667%;
+}
+
+.review__item:nth-child(1) .review__avatar {
+    background: #4ab5e3;
+}
+
+.review__item:nth-child(2) .review__avatar {
+    background: #439f90;
+}
+
+.review__order {
+    margin-top: 38px;
+    display: flex;
+    gap: 0 12px;
+}
+
+.review__oder-item {
+    cursor: pointer;
+    width: 22px;
+    height: 6px;
+    border: 1px solid #9b9fab;
+    background: #fff;
+}
+
+.review__order-item--avtive {
+    border: none;
+    background: #7264d6;
+}
