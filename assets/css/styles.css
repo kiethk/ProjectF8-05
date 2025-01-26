@@ -58,6 +58,7 @@ a {
 }
 
 .heading-top {
+    --color-before: #696d77;
     display: flex;
     align-items: center;
     color: #696d77;
@@ -72,7 +73,7 @@ a {
     content: "";
     width: 18px;
     height: 2px;
-    background: #696d77;
+    background: var(--color-before);
 }
 
 .heading {
@@ -754,4 +755,245 @@ body.scrolled .header {
     width: 160px;
     height: 160px;
     border-radius: 12px;
+}
+
+/* ======================App=================== */
+
+.app {
+    margin-top: 160px;
+}
+
+.app__inner {
+    position: relative;
+    border-radius: 24px;
+    background: #7264d6;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app__heading-top.heading-top {
+    color: #fff;
+    --color-before: #fff;
+}
+
+.app__heading,
+.app__desc {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+.app__desc {
+    max-width: 435px;
+    text-align: center;
+}
+
+.app__action {
+    position: relative;
+    z-index: 1;
+    margin-top: 38px;
+    display: flex;
+    gap: 0 16px;
+}
+
+.app__link {
+    color: #7264d6;
+    display: flex;
+
+    align-items: center;
+    padding: 18px 32px;
+    width: 182px;
+    height: 64px;
+    gap: 0 8px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease;
+}
+
+.fa-brands {
+    font-size: 2.5rem;
+}
+
+.app__box-desc {
+    color: #7264d6;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+.app__name {
+    white-space: nowrap;
+    margin-top: 8px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.app__link:hover {
+    background: #7264d6;
+    color: #fff;
+    .app__box-desc {
+        color: #fff;
+    }
+}
+
+.app__decor {
+    z-index: 0;
+    position: absolute;
+}
+
+.app__decor:nth-of-type(1) {
+    top: 49px;
+    left: 112px;
+}
+
+.app__decor:nth-of-type(2) {
+    bottom: 49px;
+    left: 166px;
+}
+
+.app__decor:nth-of-type(3) {
+    top: 49px;
+    right: 112px;
+}
+
+.app__decor:nth-of-type(4) {
+    bottom: 49px;
+    right: 166px;
+}
+
+/* ======================Footer=================== */
+
+.footer {
+    margin-top: 100px;
+    background: linear-gradient(to bottom, #fafbff 85%, #7264d6 85%);
+    padding: 100px 0 28px;
+}
+
+.footer__inner {
+    display: flex;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.footer__column-heading {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 166.667%;
+}
+
+.footer__column-list {
+    margin-top: 24px;
+}
+
+.footer__column-item {
+    margin-top: 10px;
+}
+
+.footer__column-link,
+.footer__address,
+.footer__tell,
+.footer__email {
+    color: #6a6e78;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 166.667%;
+}
+
+.footer__tell,
+.footer__email {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.footer__address {
+    margin-top: 24px;
+    max-width: 371px;
+}
+
+.footer__column {
+    flex-shrink: 0;
+}
+
+.footer__column:nth-of-type(1) {
+    justify-content: space-between;
+}
+
+.footer__column:nth-of-type(2) {
+    margin-left: 116px;
+}
+
+.footer__tell {
+    margin-top: 70px;
+}
+
+.footer__column:nth-of-type(3) {
+    margin-left: 144px;
+}
+
+.footer__column:nth-of-type(4) {
+    margin-left: 163px;
+}
+
+.footer__form-box {
+    margin-top: 48px;
+}
+
+.footer__form-heading {
+    color: #0a142f;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 166.667%;
+}
+
+.footer__form {
+    margin-top: 24px;
+}
+
+.footer__form-input {
+    width: 270px;
+    height: 52px;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #8e919a;
+}
+
+.footer__form-submit {
+    margin-left: 20px;
+    width: 113px;
+    height: 52px;
+    padding: 12px 18px;
+    border-radius: 6px;
+    background: #7264d6;
+    border: 1px solid #7264d6;
+    outline: none;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 175%;
+    transition: all.3s ease;
+}
+
+.footer__form-submit:hover {
+    color: #7264d6;
+    background: #fff;
+}
+
+.footer__copy {
+    margin-top: 56px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
 }
